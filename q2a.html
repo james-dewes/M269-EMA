@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Walk</title>
+    <link rel="stylesheet" href="q2a.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Dewes">
+  </head>
+  <body>
+    <h1>Add Walk</h1>
+    <nav>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </nav>
+    <div class="main">
+      <form class="" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+        <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="A walk" required><br>
+        <label for="date">Date:</label>
+        <input type="date" name="date" value="" required><br>
+        <label for="time">Start Time:</label>
+        <input type="time" name="time" value="" required><br>
+        <label for="location">Meeting point:</label>
+        <input type="text" name="location" value="" placeholder="The old mill" required><br>
+        <label for="distance">Distance (miles):</label>
+        <input type="number" name="distance" value="" min="1" max="99" required><br>
+        <label for="notes">Notes:</label><br>
+        <textarea name="notes" rows="4" cols="30"></textarea><br>
+        <label for="status">Walk Status:</label><br>
+        <div class="statusGroup">
+          <label>Proposed:</label><input type="radio" name="status" value="proposed" checked="checked"><br>
+          <label>Approved:</label><input type="radio" name="status" value="approved"><br>
+          <label>Rejected:</label><input type="radio" name="status" value="rejected"><br>
+        </div>
+        <input type="submit" name="submit" value="Save">
+      </form>
+    </div>
+    <footer>Open University Walking Club</footer>
+  </body>
+</html>

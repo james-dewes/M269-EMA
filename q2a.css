@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+  padding: 1rem;
+}
+footer{
+  border-top: solid 1px grey;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+nav{
+  text-align: center;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+nav a {
+  font-weight: bold;
+}
+h1{
+  text-align: center;
+  background-color: #aecceb;
+  max-width: 80%;
+}
+input{
+  margin: 0.25rem;
+  font-size: 1rem;
+}
+.main{
+  max-width: 80%;
+  padding: 1rem;
+  background-color: #aecceb;
+
+}
+.statusGroup{
+  background-color: white;
+  padding: 1rem;
+}
