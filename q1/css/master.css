@@ -4,6 +4,32 @@
     margin: 0px;
 
 }
+
+/* style for the header section */
+header{
+  margin-top: 1rem;
+}
+header img{
+  margin-left: 3%;
+}
+h1{
+  vertical-align: top;
+  display: inline;
+}
+
+nav{
+  margin: 1.5rem 0rem 1rem 2rem;
+  font-weight: bold;
+}
+nav a{
+  padding-left: 2rem
+}
+hr{
+  margin-left: 3%;
+  width: 94%;
+}
+
+/* style for the login page*/
 .login form{
   border: solid 1px black;
   margin-top: 15%;
