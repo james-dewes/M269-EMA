@@ -28,6 +28,10 @@ hr{
   margin-left: 3%;
   width: 94%;
 }
+main{
+  margin: 1rem;
+  margin-left: 3%;
+}
 
 /* style for the login page*/
 .login form{
@@ -49,4 +53,14 @@ hr{
 
 .login input{
   margin-top: 1rem;
+}
+
+/*style for the tables*/
+table, th, td {
+  border: solid 1px black;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+.center{
+  text-align: center;
 }
