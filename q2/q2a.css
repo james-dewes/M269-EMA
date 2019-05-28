@@ -15,7 +15,7 @@ footer{
   padding: 0.5rem 0rem 0.5rem 0rem;
   text-align: center;
   font-size: 0.5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -39,21 +39,26 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-h1{
-  /* background-color: #aecceb; */
-
-}
 h1 img{
   position: relative;
   top: 0.5rem;
+}
+h2{
+  margin-bottom: 1.5rem;
+}
+form{
+  width: 60%;
 }
 input{
   margin: 0.25rem;
   font-size: 1rem;
 }
+label{
+  margin-left: 0;
+}
 .main{
   padding: 1rem;
-
+  box-shadow: 10px 5px 5px grey;
 }
 .statusGroup{
   padding: 1rem;
@@ -86,6 +91,13 @@ input{
 }
 .grid {
   display: grid;
-  grid-template-columns: 10% 1fr 1fr 1fr;
-  grid-gap: 0.3em 0.6em;
+  grid-template-columns: auto auto;
+  grid-gap: 0.3em 0.3em;
+  align-items: baseline;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
 }
