@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: arial, sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -12,7 +12,7 @@ body{
 footer{
   max-width: 90%;
   border-top: solid 1px grey;
-  padding: 0.5rem 0rem 0.5rem 0rem;
+  padding: 0.5rem 0 0.5rem 0;
   text-align: center;
   font-size: 0.5rem;
   position: fixed;
@@ -23,8 +23,8 @@ footer{
   margin-right: auto;
 }
 nav{
-  margin: 1rem 0rem 1rem 0rem;
-  padding: 1rem 0rem 1rem 0rem;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
   font-size: 1.25rem;
   border-bottom: solid 1px black;
   box-shadow: 10px 5px 5px grey;
@@ -78,7 +78,6 @@ label{
 }
 .controls input:hover{
   cursor: pointer;
-
 }
 .username{
   font-weight: bold;

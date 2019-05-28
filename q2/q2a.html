@@ -11,20 +11,20 @@
     <header>
       <div class="user">
         <span class="username">Jane Doe</span><br/>
-        <a href="#">
+        <a href="#" title="Sign Out of the admin application" tabindex="105">
           Sign out
         </a>
       </div>
       <h1>
-        <img src="75x40.gif" class="logo" alt="">
+        <img src="75x40.gif" class="logo" alt="The Open University Walking Club Logo">
         OUWC Admin
       </h1>
       <nav>
-        <a href="#">Walks</a>
-        <a href="#">Events</a>
-        <a href="#">Members</a>
-        <a href="#">News</a>
-        <a href="#">Announcements</a>
+        <a href="#" title="Review, add and amend walks" tabindex="100">Walks</a>
+        <a href="#" title="Review, add and amend events" tabindex="101">Events</a>
+        <a href="#" title="Review, add, approve and amend Member records" tabindex="102">Members</a>
+        <a href="#" title="Review, add and control news articles" tabindex="103">News</a>
+        <a href="#" title="Schedule and send announcements" tabindex="104">Announcements</a>
       </nav>
     </header>
     <div class="main">
@@ -34,34 +34,34 @@
         <div class="grid">
           <div class="grid">
               <label for="name">Name:</label>
-              <input type="text" name="name" placeholder="A walk" required>
+              <input type="text" name="name" id="name" placeholder="A walk" tabindex="1" required>
               <label for="date">Date:</label>
-              <input type="date" name="date" value="" required>
+              <input type="date" name="date" id="date" value="" tabindex="2" required>
               <label for="time">Start Time:</label>
-              <input type="time" name="time" value="" required>
+              <input type="time" name="time" id="time" value="" tabindex="3" required>
               <label for="location">Meeting point:</label>
-              <input type="text" name="location" value="" placeholder="The old mill" required>
+              <input type="text" name="location" id="location" value="" placeholder="The old mill" tabindex="4" required>
               <label for="distance">Distance (miles):</label>
-              <input type="number" name="distance" value="" min="1" max="99" placeholder="5" required>
+              <input type="number" name="distance" id="distance" value="" min="1" max="99" placeholder="5" tabindex="5" required>
             </div>
             <div class="grid">
               <label for="notes">Notes:</label>
-              <textarea name="notes" rows="8" cols="30"></textarea>
+              <textarea name="notes" id="notes" rows="8" cols="30" tabindex="6"></textarea>
             </div>
         </div>
           <div class="statusGroup">
-            <label for="status">Walk Status</label><br/>
-            <label>Proposed:</label><input type="radio" name="status" value="proposed" checked="checked">
-            <label>Approved:</label><input type="radio" name="status" value="approved">
-            <label>Rejected:</label><input type="radio" name="status" value="rejected">
+            <p>Walk Status</p>
+            <label for="proposed">Proposed:</label><input type="radio" name="status" id="proposed" value="proposed" tabindex="7" checked>
+            <label for="approved">Approved:</label><input type="radio" name="status" id="approved" value="approved" tabindex="-1">
+            <label for=rejected>Rejected:</label><input type="radio" name="status" id="rejected" value="rejected" tabindex="-1">
           </div>
         <div class="controls">
-          <input type="reset" name="clear" value="Clear">
-          <input type="button" name="cancel" value="Cancel">
-          <input type="submit" name="submit" value="Save">
+          <input type="reset" name="clear" value="Clear" tabindex="9">
+          <input type="button" name="cancel" value="Cancel" tabindex="10">
+          <input type="submit" name="submit" value="Save" tabindex="8">
         </div>
       </form>
     </div>
-    <footer>&copy2019 Open University Walking Club</footer>
+    <footer>&copy;2019 Open University Walking Club</footer>
   </body>
 </html>
