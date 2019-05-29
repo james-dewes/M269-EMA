@@ -63,6 +63,7 @@ label{
 .statusGroup{
   padding: 1rem;
   text-align: center;
+  border: 0;
 }
 .controls{
   text-align: center;
