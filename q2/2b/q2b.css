@@ -100,3 +100,10 @@ label{
   align-items: stretch;
   justify-content: center;
 }
+.required{
+  font-size: 0.8rem;
+  text-align: right;
+}
+.red{
+  color: red;
+}

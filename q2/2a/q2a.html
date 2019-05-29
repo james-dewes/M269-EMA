@@ -29,31 +29,35 @@
     </header>
     <div class="main">
       <h2>Add or Edit a Walk</h2>
-      <form class="" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+      <form class="" action="http//students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
         <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef">
+        <p class="required">
+          <span class="red">*</span>
+          required</p>
         <div class="grid">
           <div class="grid">
-              <label for="name">Name:</label>
+              <label for="name">Name<span class="red">*</span></label>
               <input type="text" name="name" id="name" placeholder="A walk" tabindex="1" required>
-              <label for="date">Date:</label>
+              <label for="date">Date<span class="red">*</span></label>
               <input type="date" name="date" id="date" value="" tabindex="2" required>
-              <label for="time">Start Time:</label>
+              <label for="time">Start Time<span class="red">*</span></label>
               <input type="time" name="time" id="time" value="" tabindex="3" required>
-              <label for="location">Meeting Point:</label>
+              <label for="location">Meeting Point<span class="red">*</span></label>
               <input type="text" name="location" id="location" value="" placeholder="The old mill" tabindex="4" required>
-              <label for="distance">Distance (Miles):</label>
+              <label for="distance">Distance (Miles)<span class="red">*</span></label>
               <input type="number" name="distance" id="distance" value="" min="1" max="99" placeholder="5" tabindex="5" required>
             </div>
             <div class="grid">
-              <label for="notes">Notes:</label>
+              <label for="notes">Notes</label>
               <textarea name="notes" id="notes" rows="8" cols="30" tabindex="6"></textarea>
             </div>
         </div>
+
           <div class="statusGroup">
             <p>Walk Status</p>
-            <label for="proposed">Proposed:</label><input type="radio" name="status" id="proposed" value="proposed" tabindex="7" checked>
-            <label for="approved">Approved:</label><input type="radio" name="status" id="approved" value="approved" tabindex="-1">
-            <label for=rejected>Rejected:</label><input type="radio" name="status" id="rejected" value="rejected" tabindex="-1">
+            <label for="proposed">Proposed</label><input type="radio" name="status" id="proposed" value="proposed" tabindex="7" checked>
+            <label for="approved">Approved</label><input type="radio" name="status" id="approved" value="approved" tabindex="-1">
+            <label for=rejected>Rejected</label><input type="radio" name="status" id="rejected" value="rejected" tabindex="-1">
           </div>
         <div class="controls">
           <input type="reset" name="clear" value="Clear" tabindex="9">
