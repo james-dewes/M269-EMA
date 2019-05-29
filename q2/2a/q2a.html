@@ -31,9 +31,7 @@
       <h2>Add or Edit a Walk</h2>
       <form class="" action="http//students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
         <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef">
-        <p class="required">
-          <span class="red">*</span>
-          required</p>
+
         <div class="grid">
           <div class="grid">
               <label for="name">Name<span class="red">*</span></label>
@@ -52,7 +50,9 @@
               <textarea name="notes" id="notes" rows="8" cols="30" tabindex="6"></textarea>
             </div>
         </div>
-
+        <p class="required">
+          <span class="red">*</span>
+          required</p>
           <div class="statusGroup">
             <p>Walk Status</p>
             <label for="proposed">Proposed</label><input type="radio" name="status" id="proposed" value="proposed" tabindex="7" checked>
