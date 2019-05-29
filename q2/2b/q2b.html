@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Add Walk</title>
-    <link rel="stylesheet" href="q2a.css">
+    <link rel="stylesheet" href="q2b.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="James Dewes">
   </head>
@@ -20,7 +20,7 @@
         OUWC Admin
       </h1>
       <nav>
-        <a href="#" title="Review, add and amend walks" tabindex="100">Walks</a>
+        <a href="#" title="Review, add and amend walks" tabindex="100" class="active">Walks</a>
         <a href="#" title="Review, add and amend events" tabindex="101">Events</a>
         <a href="#" title="Review, add, approve and amend Member records" tabindex="102">Members</a>
         <a href="#" title="Review, add and control news articles" tabindex="103">News</a>
@@ -32,7 +32,7 @@
       <form class="" action="http//students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
         <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef">
 
-        <div class="grid">
+        <div class="flex">
           <div class="grid">
               <label for="name">Name<span class="red">*</span></label>
               <input type="text" name="name" id="name" placeholder="A walk" tabindex="1" required>
@@ -52,12 +52,19 @@
         </div>
         <p class="required">
           <span class="red">*</span>
-          required</p>
+          required
+        </p>
           <div class="statusGroup">
             <p>Walk Status</p>
-            <label for="proposed">Proposed</label><input type="radio" name="status" id="proposed" value="proposed" tabindex="7" checked>
-            <label for="approved">Approved</label><input type="radio" name="status" id="approved" value="approved" tabindex="-1">
-            <label for=rejected>Rejected</label><input type="radio" name="status" id="rejected" value="rejected" tabindex="-1">
+            <div class="status">
+              <label for="proposed">Proposed</label><input type="radio" name="status" id="proposed" value="proposed" tabindex="7" checked>
+            </div>
+            <div class="status">
+              <label for="approved">Approved</label><input type="radio" name="status" id="approved" value="approved" tabindex="-1">
+            </div>
+            <div class="status">
+              <label for=rejected>Rejected</label><input type="radio" name="status" id="rejected" value="rejected" tabindex="-1">
+            </div>
           </div>
         <div class="controls">
           <input type="reset" name="clear" value="Clear" tabindex="9">

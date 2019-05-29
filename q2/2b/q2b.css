@@ -107,3 +107,86 @@ label{
 .red{
   color: red;
 }
+@media only screen and (max-width: 375px) {
+  h1{
+    font-size: 1.6rem;
+    vertical-align: bottom;
+    padding-top: 0.5rem;
+  }
+  nav{
+    height: 3rem;
+    overflow: hidden;
+  }
+  nav a{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid 1px white;
+
+  }
+  nav a:hover, .active{
+    background-color: white;
+    color: #002158;
+    text-decoration: none;
+  }
+  nav::before, nav::selection{
+    margin-left: 5%;
+    height:2px;
+    width:20px;
+    background:white;
+    display:inline-block;
+    content:"";
+    box-shadow:0px -7px 0px 0px  white,
+               0px -14px 0px 0px white;
+  }
+  nav:hover{
+    height: auto;
+    }
+  /* nav:focus{
+    height: 3rem;
+  } */
+
+  nav:hover::before{
+    background: grey;
+    box-shadow:0px -7px 0px 0px  grey,
+               0px -14px 0px 0px grey;
+  }
+  .user{
+    display: inline-block;
+  }
+  .main{
+    box-shadow: none;
+    padding: 0;
+  }
+  .grid{
+    align-items: center;
+
+  }
+  label, input{
+    margin: 1rem;
+  }
+  .status label{
+    display: block;
+    border: solid 1px buttonFace;
+    background-color: buttonFace;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0.5rem 0 0.5rem 0;
+    box-shadow: 2px 2px 5px grey;
+  }
+  .status label:active{
+    border: solid 1px grey;
+    background-color: #00DFEE44;
+  }
+  .status input{
+    display: none;
+  }
+  .controls{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+  }
+
+}
