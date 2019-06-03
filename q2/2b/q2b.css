@@ -126,26 +126,26 @@ fieldset{
     color: #002158;
     text-decoration: none;
   }
-  nav::before, nav::selection{
+  nav::before{
     margin-left: 5%;
     height:2px;
     width:20px;
     background:white;
     display:inline-block;
     content:"";
-    box-shadow:0px -7px 0px 0px  white,
-               0px -14px 0px 0px white;
+    box-shadow:0px -7px white, 0px -14px white;
   }
-  nav:hover{
+  .navActive{
     height: auto;
-    }
-  nav:hover::before{
+  }
+  .navActive::before{
     background: grey;
-    box-shadow:0px -7px 0px 0px  grey,
-               0px -14px 0px 0px grey;
+    box-shadow:0px -7px grey, 0px -14px 0px 0px grey;
+
   }
   footer{
     border-top: solid 1px grey;
+    margin-top: 1rem;
   }
   h1{
     font-size: 1.6rem;
@@ -171,8 +171,8 @@ fieldset{
   }
   .status label{
     display: block;
-    border: solid 1px buttonFace; //http://www.iangraham.org/books/xhtml1/appd/update-23feb2000.html
-    background-color: buttonFace; //http://www.iangraham.org/books/xhtml1/appd/update-23feb2000.html
+    border: solid 1px buttonFace;
+    background-color: buttonFace;
     padding: 0.5rem;
     font-weight: bold;
     border-radius: 5px;
@@ -182,11 +182,15 @@ fieldset{
   }
   .status label:active{
     border: solid 1px grey;
-    background-color: Highlight; //http://www.iangraham.org/books/xhtml1/appd/update-23feb2000.xhtml
+    background-color: Highlight;
   }
   .status input{
     display: none;
   }
+  label.selected{
+    background-color:white;
+  }
+
   .controls input{
     width: 11rem;
     display: inline;

@@ -6,6 +6,32 @@
     <link rel="stylesheet" href="q2b.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="James Dewes">
+    <script>
+        function toggleHeight(element,value)
+        {
+          console.log("Class: "+element.className);
+          if(element.className == value){
+            element.className = "";
+          }else {
+            element.className = "navActive";
+          }
+        }
+        function statusSelect(element) {
+          try {
+            document.getElementsByClassName("selected")[0].className="status";
+          } catch (e) {
+            console.log("Unable to clear previous selections");
+          } finally {
+            element.previousSibling.className = "selected";
+          }
+        }
+        document.onload(
+          function(){
+            toggleHeight(document.getElementsById('nav'),'navActive');
+            // FIXME:
+          }
+        )
+    </script>
   </head>
   <body>
     <header>
@@ -19,7 +45,7 @@
         <img src="75x40.gif" class="logo" alt="The Open University Walking Club Logo">
         OUWC Admin
       </h1>
-      <nav>
+      <nav onclick="toggleHeight(this,'navActive')" id="nav" class="navActive">
         <a href="#" title="Review, add and amend walks" tabindex="100" class="active">Walks</a>
         <a href="#" title="Review, add and amend events" tabindex="101">Events</a>
         <a href="#" title="Review, add, approve and amend Member records" tabindex="102">Members</a>
@@ -29,7 +55,7 @@
     </header>
     <div class="main">
       <h2>Add or Edit a Walk</h2>
-      <form class="" action="http//students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+      <form class="" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
         <input type="hidden" name="sessionID" value="12345678-09ab-1111-cdef">
         <div class="flex">
           <div class="grid">
@@ -52,13 +78,13 @@
           <fieldset class="statusGroup">
             <legend>Walk Status</legend>
             <div class="status">
-              <label for="proposed">Proposed</label><input type="radio" name="status" id="proposed" value="proposed" tabindex="7" checked>
+              <label for="proposed" class="selected">Proposed</label><input type="radio" onclick="statusSelect(this)" name="status" id="proposed" value="proposed" tabindex="7" checked>
             </div>
             <div class="status">
-              <label for="approved">Approved</label><input type="radio" name="status" id="approved" value="approved" tabindex="-1">
+              <label for="approved">Approved</label><input type="radio"  onclick="statusSelect(this)" name="status" id="approved" value="approved" tabindex="-1">
             </div>
             <div class="status">
-              <label for=rejected>Rejected</label><input type="radio" name="status" id="rejected" value="rejected" tabindex="-1">
+              <label for=rejected>Rejected</label><input type="radio"  onclick="statusSelect(this)" name="status" id="rejected" value="rejected" tabindex="-1">
             </div>
           </fieldset>
 
