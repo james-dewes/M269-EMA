@@ -25,13 +25,19 @@
             element.previousSibling.className = "selected";
           }
         }
-        document.onload(
+        window.onload =
           function(){
-            toggleHeight(document.getElementsById('nav'),'navActive');
+            toggleHeight(document.getElementById('nav'),'navActive');
             // FIXME:
-          }
-        )
+          };
     </script>
+    <noscript>
+      <style media="screen">
+        .status input{
+          display: inline;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <header>
@@ -87,7 +93,6 @@
               <label for=rejected>Rejected</label><input type="radio"  onclick="statusSelect(this)" name="status" id="rejected" value="rejected" tabindex="-1">
             </div>
           </fieldset>
-
         <div class="controls">
           <input type="reset" name="clear" value="Clear" tabindex="9">
           <input type="button" name="cancel" value="Cancel" tabindex="10">
